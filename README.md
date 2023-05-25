@@ -4,6 +4,8 @@ grpc代理简单示例，http协议转grpc协议。
 
 client ---http1.1---> proxy ---grpc---> grpc-server
 
+![alt text](./doc/img/grpc-web-proxy.png "grpc gateway")
+
 ### Protobuf
 ````
 syntax = "proto3";
@@ -36,7 +38,7 @@ go run .
 ````
 
 
-```` http request
+```` shell
 # 请求proxy
 curl -X POST -H "Content-Type:application/json" -H "Package:/helloworld" \
 -H "Service:Greeter" -H "Method:SayHello" \
