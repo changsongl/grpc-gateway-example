@@ -42,8 +42,8 @@ go run .
 # 请求proxy
 curl -X POST -H "Content-Type:application/json" -H "Package:/helloworld" \
 -H "Service:Greeter" -H "Method:SayHello" \
-http://127.0.0.1:8080/ -d '{"name": "hehehe"}' 
+http://127.0.0.1:8080/ -d '{"name": "Jason"}' 
 
 # proxy返回了grpc response
-{"message":"Hello, hehehe!"}%   
+{"message":"Hello, Jason!"}%   
 ````
