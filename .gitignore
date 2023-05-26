@@ -23,3 +23,5 @@ go.work
 .gitignore
 
 .idea
+
+.DS_Store
